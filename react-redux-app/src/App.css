@@ -1,0 +1,17 @@
+.App {
+display: flex;
+justify-content: center;
+align-items: column;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: column;  
+}
+
+.svg{
+  align-self: center;
+  max-height: 10rem;
+  margin-left: 28rem;
+}
