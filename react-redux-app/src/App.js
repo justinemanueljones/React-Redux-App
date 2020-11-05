@@ -8,7 +8,7 @@ import { fetchCases } from './actions/casesAction'
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
-
+import CardMedia from '@material-ui/core/CardMedia';
 
 function App(props) {
       useEffect(() => {
@@ -25,24 +25,42 @@ function App(props) {
       </div>
       <div className="App">
 
-     <Card style={{width:'40%', margin:'1rem',padding:'0.5rem',}} 
+     <Card style={{width:'40%', margin:'1rem',padding:'0.5rem',backgroundColor:'#EFEFEF',}} 
      variant="outlined">
      <CardContent>
       <Cards title = {'Infected'} description = {'active cases'} cases = {props.confirmedCases} date = {props.date} />
+      <CardMedia 
+          component="img"
+          alt=""
+          height="240"
+          image="https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+          title=""/>
       </CardContent>
      </Card>
 
-     <Card style={{width:'40%', margin:'1rem',padding:'0.5rem',}} 
+     <Card style={{width:'40%', margin:'1rem',padding:'0.5rem',backgroundColor:'#EFEFEF'}} 
      variant="outlined">
      <CardContent>
       <Cards title = {'Recovered'} description = {'recoveries'} cases = {props.recoveredCases} date = {props.date} />
+      <CardMedia 
+          component="img"
+          alt=""
+          height="240"
+          image="https://images.unsplash.com/photo-1579546928937-641f7ac9bced?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+          title=""/>
       </CardContent>
       </Card>
 
-      <Card style={{width:'40%', margin:'1rem',padding:'0.5rem',}} 
+      <Card style={{width:'40%', margin:'1rem',padding:'0.5rem',backgroundColor:'#EFEFEF'}} 
        variant="outlined">
       <CardContent>
         <Cards title = {'Deaths'} description = {'deaths'} cases = {props.deaths} date = {props.date} />
+        <CardMedia 
+          component="img"
+          alt=""
+          height="240"
+          image="https://images.unsplash.com/photo-1569982175971-d92b01cf8694?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+          title=""/>
         </CardContent>
      </Card>
 
